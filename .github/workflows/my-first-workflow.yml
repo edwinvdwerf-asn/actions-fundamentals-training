@@ -20,12 +20,11 @@ jobs:
     steps:
       - name: Print event name that triggered the workflow
         run: |
-          echo $GITHUB_EVENT_NAME
+          echo "event name: ${{ github.event_name }}"
       - name: Print ref
         run: |
-          echo $GITHUB_HEAD_REF
+          echo "ref: ${{ github.ref }}"
       - name: Print repo files
         run: |
-          echo todo
-      
-
+          echo "The repository ${{ github.repository }} contains the following files:"
+          tree
