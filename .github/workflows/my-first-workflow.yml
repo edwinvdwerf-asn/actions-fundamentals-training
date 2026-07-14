@@ -24,7 +24,8 @@ jobs:
       - name: Print ref
         run: |
           echo "ref: ${{ github.ref }}"
+      - uses: actions/checkout@v6.0.2
       - name: Print repo files
         run: |
-          echo "The repository ${{ github.repository }} contains the following files:"
+          echo "files in ${{ github.repository }}:"
           tree
