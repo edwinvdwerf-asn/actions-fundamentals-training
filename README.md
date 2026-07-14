@@ -3,6 +3,7 @@
 Repo for the `GitHub Actions Fundamentals` training.
 
 Test commit with skip ci.
+Test commit without skip ci.
 
 ## 👉 Objectives
 
